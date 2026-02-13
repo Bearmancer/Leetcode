@@ -17,8 +17,24 @@ class Solution {
     }
 
     private ListNode recursive(ListNode list1, ListNode list2) {
-        //TODO
-        throw new UnsupportedOperationException();
+        // 1 -> 3 -> 5
+        // 2 -> 3 -> 4 -> 5
+
+        // 1 -> merge(3 -> 5, 2 -> 3 -> 4 -> 5)
+
+        if (list1 == null) return list2;
+        if (list2 == null) return list1;
+
+        // 1 elements
+        if (list1.val < list2.val) {
+            ListNode newHead = list1;
+            newHead.next = recursive(list1.next, list2);
+            return newHead;
+        } else {
+            ListNode newHead = list2;
+            newHead.next = recursive(list2.next, list1);
+            return newHead;
+        }
     }
 
     private ListNode iterative(ListNode list1, ListNode list2) {
