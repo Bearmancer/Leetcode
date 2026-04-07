@@ -1,4 +1,4 @@
-package Q2_Add_Two_Numbers;
+package Q_2_Add_Two_Numbers;
 
 public class Solution {
     // Theta(max(m, n)) time complexity

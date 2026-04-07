@@ -1,4 +1,4 @@
-package Q19_Remove_Nth_Node_From_Linked_List;
+package Q_19_Remove_Nth_Node_From_Linked_List;
 
 import java.util.ArrayList;
 
