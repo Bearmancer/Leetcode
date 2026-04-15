@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Clear Python Artifacts",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy", "Bypass",
+        "-File", "${workspaceFolder}/.github/scripts/Clear-Artifacts.ps1"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
