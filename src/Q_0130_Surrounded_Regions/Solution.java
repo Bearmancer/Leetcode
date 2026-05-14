@@ -1,11 +1,10 @@
 package Q_0130_Surrounded_Regions;
 
 /**
- * <h2><a href="https://leetcode.com/problems/surrounded-regions/">LeetCode #130: Surrounded Regions</a></h2>
+ * <h1><a href="https://leetcode.com/problems/surrounded-regions/">LeetCode #130: Surrounded Regions</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Graphs</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/surrounded-regions">neetcode.io/problems/surrounded-regions</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>You are given an <code>m x n</code> matrix <code>board</code> containing <strong>letters</strong> <code>'X'</code> and <code>'O'</code>, <strong>capture regions</strong> that are <strong>surrounded</strong>:</p>
  * <ul>
  * <li><strong>Connect</strong>: A cell is connected to adjacent cells horizontally or vertically.</li>
@@ -13,8 +12,7 @@ package Q_0130_Surrounded_Regions;
  * <li><strong>Surround</strong>: A region is surrounded if none of the <code>'O'</code> cells in that region are on the edge of the board. Such regions are <strong>completely enclosed </strong>by <code>'X'</code> cells.</li>
  * </ul>
  * <p>To capture a <strong>surrounded region</strong>, replace all <code>'O'</code>s with <code>'X'</code>s <strong>in-place</strong> within the original board. You do not need to return anything.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]</span></p>
  * <p><strong>Output:</strong> <span class="example-io">[["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]</span></p>
@@ -22,13 +20,12 @@ package Q_0130_Surrounded_Regions;
  * <img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/xogrid.jpg" style="width: 367px; height: 158px;"/>
  * <p>In the above diagram, the bottom region is not captured because it is on the edge of the board and cannot be surrounded.</p>
  *
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">board = [["X"]]</span></p>
  * <p><strong>Output:</strong> <span class="example-io">[["X"]]</span></p>
  *
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>m == board.length</code></li>
  * <li><code>n == board[i].length</code></li>

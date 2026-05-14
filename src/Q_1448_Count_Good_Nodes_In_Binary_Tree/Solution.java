@@ -1,15 +1,13 @@
 package Q_1448_Count_Good_Nodes_In_Binary_Tree;
 
 /**
- * <h2><a href="https://leetcode.com/problems/count-good-nodes-in-binary-tree/">LeetCode #1448: Count Good Nodes in Binary Tree</a></h2>
+ * <h1><a href="https://leetcode.com/problems/count-good-nodes-in-binary-tree/">LeetCode #1448: Count Good Nodes in Binary Tree</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Trees</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/count-good-nodes-in-binary-tree">neetcode.io/problems/count-good-nodes-in-binary-tree</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given a binary tree <code>root</code>, a node <em>X</em> in the tree is named <strong>good</strong> if in the path from root to <em>X</em> there are no nodes with a value <em>greater than</em> X.</p>
  * <p>Return the number of <strong>good</strong> nodes in the binary tree.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/04/02/test_sample_1.png" style="width: 263px; height: 156px;"/></strong></p>
  * <pre>
  * <strong>Input:</strong> root = [3,1,4,3,null,1,5]
@@ -19,19 +17,18 @@ package Q_1448_Count_Good_Nodes_In_Binary_Tree;
  * Node 4 -&gt; (3,4) is the maximum value in the path starting from the root.
  * Node 5 -&gt; (3,4,5) is the maximum value in the path
  * Node 3 -&gt; (3,1,3) is the maximum value in the path.</pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/04/02/test_sample_2.png" style="width: 157px; height: 161px;"/></strong></p>
  * <pre>
  * <strong>Input:</strong> root = [3,3,null,4,2]
  * <strong>Output:</strong> 3
  * <strong>Explanation:</strong> Node 2 -&gt; (3, 3, 2) is not good, because "3" is higher than it.</pre>
- * <p><strong class="example">Example 3:</strong></p>
+ * <h3>Example 3:</h3>
  * <pre>
  * <strong>Input:</strong> root = [1]
  * <strong>Output:</strong> 1
  * <strong>Explanation:</strong> Root is considered as <strong>good</strong>.</pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li>The number of nodes in the binary tree is in the range <code>[1, 10^5]</code>.</li>
  * <li>Each node's value is between <code>[-10^4, 10^4]</code>.</li>

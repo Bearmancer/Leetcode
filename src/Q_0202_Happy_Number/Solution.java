@@ -1,11 +1,10 @@
 package Q_0202_Happy_Number;
 
 /**
- * <h2><a href="https://leetcode.com/problems/happy-number/">LeetCode #202: Happy Number</a></h2>
+ * <h1><a href="https://leetcode.com/problems/happy-number/">LeetCode #202: Happy Number</a></h1>
  * <p><b>Difficulty:</b> Easy &nbsp;|&nbsp; <b>Category:</b> Math & Geometry</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/happy-number">neetcode.io/problems/happy-number</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Write an algorithm to determine if a number <code>n</code> is happy.</p>
  * <p>A <strong>happy number</strong> is a number defined by the following process:</p>
  * <ul>
@@ -14,8 +13,7 @@ package Q_0202_Happy_Number;
  * <li>Those numbers for which this process <strong>ends in 1</strong> are happy.</li>
  * </ul>
  * <p>Return <code>true</code> <em>if</em> <code>n</code> <em>is a happy number, and</em> <code>false</code> <em>if not</em>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> n = 19
  * <strong>Output:</strong> true
@@ -25,13 +23,12 @@ package Q_0202_Happy_Number;
  * 6<sup>2</sup> + 8<sup>2</sup> = 100
  * 1<sup>2</sup> + 0<sup>2</sup> + 0<sup>2</sup> = 1
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> n = 2
  * <strong>Output:</strong> false
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
  * </ul>

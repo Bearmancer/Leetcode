@@ -1,24 +1,22 @@
 package Q_0131_Palindrome_Partitioning;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * <h2><a href="https://leetcode.com/problems/palindrome-partitioning/">LeetCode #131: Palindrome Partitioning</a></h2>
+ * <h1><a href="https://leetcode.com/problems/palindrome-partitioning/">LeetCode #131: Palindrome Partitioning</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Backtracking</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/palindrome-partitioning">neetcode.io/problems/palindrome-partitioning</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given a string <code>s</code>, partition <code>s</code> such that every <span data-keyword="substring-nonempty">substring</span> of the partition is a <span data-keyword="palindrome-string"><strong>palindrome</strong></span>. Return <em>all possible palindrome partitioning of </em><code>s</code>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre><strong>Input:</strong> s = "aab"
  * <strong>Output:</strong> [["a","a","b"],["aa","b"]]
- * </pre><p><strong class="example">Example 2:</strong></p>
+ * </pre><h3>Example 2:</h3>
  * <pre><strong>Input:</strong> s = "a"
  * <strong>Output:</strong> [["a"]]
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= s.length &lt;= 16</code></li>
  * <li><code>s</code> contains only lowercase English letters.</li>

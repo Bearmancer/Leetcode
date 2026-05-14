@@ -1,11 +1,11 @@
 package Q_2013_Detect_Squares;
 
 /**
- * <h2><a href="https://leetcode.com/problems/detect-squares/">LeetCode #2013: Detect Squares</a></h2>
+ * <h1><a href="https://leetcode.com/problems/detect-squares/">LeetCode #2013: Detect Squares</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Math & Geometry</p>
  * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/detect-squares">neetcode.io/problems/detect-squares</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>You are given a stream of points on the X-Y plane. Design an algorithm that:</p>
  * <ul>
  * <li><strong>Adds</strong> new points from the stream into a data structure. <strong>Duplicate</strong> points are allowed and should be treated as different points.</li>

@@ -1,13 +1,14 @@
 package Q_0355_Design_Twitter;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * <h2><a href="https://leetcode.com/problems/design-twitter/">LeetCode #355: Design Twitter</a></h2>
+ * <h1><a href="https://leetcode.com/problems/design-twitter/">LeetCode #355: Design Twitter</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Heap / Priority Queue</p>
  * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/design-twitter">neetcode.io/problems/design-twitter</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and is able to see the <code>10</code> most recent tweets in the user's news feed.</p>
  * <p>Implement the <code>Twitter</code> class:</p>
  * <ul>

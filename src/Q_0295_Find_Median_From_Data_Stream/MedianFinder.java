@@ -1,11 +1,11 @@
 package Q_0295_Find_Median_From_Data_Stream;
 
 /**
- * <h2><a href="https://leetcode.com/problems/find-median-from-data-stream/">LeetCode #295: Find Median from Data Stream</a></h2>
+ * <h1><a href="https://leetcode.com/problems/find-median-from-data-stream/">LeetCode #295: Find Median from Data Stream</a></h1>
  * <p><b>Difficulty:</b> Hard &nbsp;|&nbsp; <b>Category:</b> Heap / Priority Queue</p>
  * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/find-median-from-data-stream">neetcode.io/problems/find-median-from-data-stream</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>The <strong>median</strong> is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.</p>
  * <ul>
  * <li>For example, for <code>arr = [2,3,4]</code>, the median is <code>3</code>.</li>

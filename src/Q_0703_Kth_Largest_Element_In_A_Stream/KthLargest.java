@@ -1,11 +1,11 @@
 package Q_0703_Kth_Largest_Element_In_A_Stream;
 
 /**
- * <h2><a href="https://leetcode.com/problems/kth-largest-element-in-a-stream/">LeetCode #703: Kth Largest Element in a Stream</a></h2>
+ * <h1><a href="https://leetcode.com/problems/kth-largest-element-in-a-stream/">LeetCode #703: Kth Largest Element in a Stream</a></h1>
  * <p><b>Difficulty:</b> Easy &nbsp;|&nbsp; <b>Category:</b> Heap / Priority Queue</p>
  * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/kth-largest-element-in-a-stream">neetcode.io/problems/kth-largest-element-in-a-stream</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>You are part of a university admissions office and need to keep track of the <code>kth</code> highest test score from applicants in real-time. This helps to determine cut-off marks for interviews and admissions dynamically as new applicants submit their scores.</p>
  * <p>You are tasked to implement a class which, for a given integer <code>k</code>, maintains a stream of test scores and continuously returns the <code>k</code>th highest test score <strong>after</strong> a new score has been submitted. More specifically, we are looking for the <code>k</code>th highest score in the sorted list of all scores.</p>
  * <p>Implement the <code>KthLargest</code> class:</p>

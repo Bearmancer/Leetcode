@@ -1,37 +1,37 @@
 package Q_0002_Add_Two_Numbers;
 
 /**
- * LeetCode: https://leetcode.com/problems/add-two-numbers/
- * NeetCode: https://neetcode.io/problems/add-two-numbers
- * LeetCode #2: Add Two Numbers
+ * <h1><a href="https://leetcode.com/problems/add-two-numbers/">LeetCode #2: Add Two Numbers</a></h1>
+ * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Linked List, Math, Recursion</p>
  *
- * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+ * <h2>Problem</h2>
+ * <p>You are given two <strong>non-empty</strong> linked lists representing two non-negative integers. The digits are stored in <strong>reverse order</strong>, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.</p>
+ * <p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
  *
- * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> l1 = [2,4,3], l2 = [5,6,4]
+ * <strong>Output:</strong> [7,0,8]
+ * <strong>Explanation:</strong> 342 + 465 = 807.
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> l1 = [0], l2 = [0]
+ * <strong>Output:</strong> [0]
+ * </pre>
+ * <h3>Example 3:</h3>
+ * <pre>
+ * <strong>Input:</strong> l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+ * <strong>Output:</strong> [8,9,9,9,0,0,0,1]
+ * </pre>
  *
- *
- * Example 1:
- *
- * Input: l1 = [2,4,3], l2 = [5,6,4]
- * Output: [7,0,8]
- * Explanation: 342 + 465 = 807.
- *
- * Example 2:
- *
- * Input: l1 = [0], l2 = [0]
- * Output: [0]
- *
- * Example 3:
- *
- * Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
- * Output: [8,9,9,9,0,0,0,1]
- *
- *
- * Constraints:
- *
- * - The number of nodes in each linked list is in the range {@code [1, 100]}.
- * - {@code 0 <= Node.val <= 9}
- * - It is guaranteed that the list represents a number that does not have leading zeros.
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li>The number of nodes in each linked list is in the range <code>[1, 100]</code>.</li>
+ *   <li><code>0 &lt;= Node.val &lt;= 9</code></li>
+ *   <li>It is guaranteed that the list represents a number that does not have leading zeros.</li>
+ * </ul>
  */
 
 public class Solution {

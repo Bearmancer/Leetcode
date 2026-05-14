@@ -1,20 +1,40 @@
 package Q_0021_Merge_Two_Sorted_Lists;
 
 /**
- * LeetCode: https://leetcode.com/problems/merge-two-sorted-lists/
- * NeetCode: https://neetcode.io/problems/merge-two-sorted-lists
- * LeetCode #21: Merge Two Sorted Lists
- * Definition for singly-linked list.
- * public class ListNode {
- * int val;
- * ListNode next;
- * ListNode() {}
- * ListNode(int val) { this.val = val; }
- * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
+ * <h1><a href="https://leetcode.com/problems/merge-two-sorted-lists/">LeetCode #21: Merge Two Sorted Lists</a></h1>
+ * <p><b>Difficulty:</b> Easy &nbsp;|&nbsp; <b>Category:</b> Linked List, Recursion</p>
+ *
+ * <h2>Problem</h2>
+ * <p>You are given the heads of two sorted linked lists <code>list1</code> and <code>list2</code>.</p>
+ * <p>Merge the two lists into one <strong>sorted</strong> list. The list should be made by splicing together the nodes of the first two lists.</p>
+ * <p>Return <em>the head of the merged linked list</em>.</p>
+ *
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> list1 = [1,2,4], list2 = [1,3,4]
+ * <strong>Output:</strong> [1,1,2,3,4,4]
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> list1 = [], list2 = []
+ * <strong>Output:</strong> []
+ * </pre>
+ * <h3>Example 3:</h3>
+ * <pre>
+ * <strong>Input:</strong> list1 = [], list2 = [0]
+ * <strong>Output:</strong> [0]
+ * </pre>
+ *
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li>The number of nodes in both lists is in the range <code>[0, 50]</code>.</li>
+ *   <li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+ *   <li>Both <code>list1</code> and <code>list2</code> are sorted in <strong>non-decreasing</strong> order.</li>
+ * </ul>
  */
 class Solution {
-/**
+	/*
  * Implementation Notes (Standardized Deep-Dive)
  * =============================================
  *

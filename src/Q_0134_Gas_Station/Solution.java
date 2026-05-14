@@ -1,16 +1,14 @@
 package Q_0134_Gas_Station;
 
 /**
- * <h2><a href="https://leetcode.com/problems/gas-station/">LeetCode #134: Gas Station</a></h2>
+ * <h1><a href="https://leetcode.com/problems/gas-station/">LeetCode #134: Gas Station</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Greedy</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/gas-station">neetcode.io/problems/gas-station</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>There are <code>n</code> gas stations along a circular route, where the amount of gas at the <code>i<sup>th</sup></code> station is <code>gas[i]</code>.</p>
  * <p>You have a car with an unlimited gas tank and it costs <code>cost[i]</code> of gas to travel from the <code>i<sup>th</sup></code> station to its next <code>(i + 1)<sup>th</sup></code> station. You begin the journey with an empty tank at one of the gas stations.</p>
  * <p>Given two integer arrays <code>gas</code> and <code>cost</code>, return <em>the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return</em> <code>-1</code>. If there exists a solution, it is <strong>guaranteed</strong> to be <strong>unique</strong>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> gas = [1,2,3,4,5], cost = [3,4,5,1,2]
  * <strong>Output:</strong> 3
@@ -23,7 +21,7 @@ package Q_0134_Gas_Station;
  * Travel to station 3. The cost is 5. Your gas is just enough to travel back to station 3.
  * Therefore, return 3 as the starting index.
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> gas = [2,3,4], cost = [3,4,3]
  * <strong>Output:</strong> -1
@@ -35,8 +33,7 @@ package Q_0134_Gas_Station;
  * You cannot travel back to station 2, as it requires 4 unit of gas but you only have 3.
  * Therefore, you can't travel around the circuit once no matter where you start.
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>n == gas.length == cost.length</code></li>
  * <li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>

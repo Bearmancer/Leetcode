@@ -1,18 +1,19 @@
 package Q_0040_Combination_Sum_II;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * <h2><a href="https://leetcode.com/problems/combination-sum-ii/">LeetCode #40: Combination Sum II</a></h2>
- * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Backtracking</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/combination-sum-ii">neetcode.io/problems/combination-sum-ii</a></p>
+ * <h1><a href="https://leetcode.com/problems/combination-sum-ii/">LeetCode #40: Combination Sum II</a></h1>
+ * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Array, Backtracking</p>
  *
- * <h3>Problem</h3>
- * <p>Given a collection of candidate numbers (<code>candidates</code>) and a target number (<code>target</code>), find all unique combinations in <code>candidates</code> where the candidate numbers sum to <code>target</code>.</p>
- * <p>Each number in <code>candidates</code> may only be used <strong>once</strong> in the combination.</p>
- * <p><strong>Note:</strong> The solution set must not contain duplicate combinations.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h2>Problem</h2>
+ * <p>Given a collection of candidate numbers (<code>candidates</code>) and a target number (<code>target</code>), find all unique combinations in <code>candidates</code> where the candidate numbers sum to <code>target</code>.</p>
+ * <p>Each number in <code>candidates</code> may only be used <strong>once</strong> in the combination.</p>
+ * <p><strong>Note:</strong> The solution set must not contain duplicate combinations.</p>
+ *
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> candidates = [10,1,2,7,6,1,5], target = 8
  * <strong>Output:</strong>
@@ -23,7 +24,7 @@ import java.util.*;
  * [2,6]
  * ]
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> candidates = [2,5,2,1,2], target = 5
  * <strong>Output:</strong>
@@ -32,17 +33,17 @@ import java.util.*;
  * [5]
  * ]
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ *
+ * <h2>Constraints</h2>
  * <ul>
- * <li><code>1 &lt;= candidates.length &lt;= 100</code></li>
- * <li><code>1 &lt;= candidates[i] &lt;= 50</code></li>
- * <li><code>1 &lt;= target &lt;= 30</code></li>
+ *   <li><code>1 &lt;= candidates.length &lt;= 100</code></li>
+ *   <li><code>1 &lt;= candidates[i] &lt;= 50</code></li>
+ *   <li><code>1 &lt;= target &lt;= 30</code></li>
  * </ul>
  */
 
 class Solution {
-/**
+	/*
  * Implementation Notes (Standardized Deep-Dive)
  * =============================================
  *

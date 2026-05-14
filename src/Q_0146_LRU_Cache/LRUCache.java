@@ -1,11 +1,11 @@
 package Q_0146_LRU_Cache;
 
 /**
- * <h2><a href="https://leetcode.com/problems/lru-cache/">LeetCode #146: LRU Cache</a></h2>
+ * <h1><a href="https://leetcode.com/problems/lru-cache/">LeetCode #146: LRU Cache</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Linked List</p>
  * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/lru-cache">neetcode.io/problems/lru-cache</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Design a data structure that follows the constraints of a <strong><a href="https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU" target="_blank">Least Recently Used (LRU) cache</a></strong>.</p>
  * <p>Implement the <code>LRUCache</code> class:</p>
  * <ul>

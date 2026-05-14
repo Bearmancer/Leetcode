@@ -1,17 +1,15 @@
 package Q_0778_Swim_In_Rising_Water;
 
 /**
- * <h2><a href="https://leetcode.com/problems/swim-in-rising-water/">LeetCode #778: Swim in Rising Water</a></h2>
+ * <h1><a href="https://leetcode.com/problems/swim-in-rising-water/">LeetCode #778: Swim in Rising Water</a></h1>
  * <p><b>Difficulty:</b> Hard &nbsp;|&nbsp; <b>Category:</b> Advanced Graphs</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/swim-in-rising-water">neetcode.io/problems/swim-in-rising-water</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>You are given an <code>n x n</code> integer matrix <code>grid</code> where each value <code>grid[i][j]</code> represents the elevation at that point <code>(i, j)</code>.</p>
  * <p>It starts raining, and water gradually rises over time. At time <code>t</code>, the water level is <code>t</code>, meaning <strong>any</strong> cell with elevation less than equal to <code>t</code> is submerged or reachable.</p>
  * <p>You can swim from a square to another 4-directionally adjacent square if and only if the elevation of both squares individually are at most <code>t</code>. You can swim infinite distances in zero time. Of course, you must stay within the boundaries of the grid during your swim.</p>
  * <p>Return <em>the minimum time until you can reach the bottom right square </em><code>(n - 1, n - 1)</code><em> if you start at the top left square </em><code>(0, 0)</code>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <img alt="" src="https://assets.leetcode.com/uploads/2021/06/29/swim1-grid.jpg" style="width: 164px; height: 165px;"/>
  * <pre>
  * <strong>Input:</strong> grid = [[0,2],[1,3]]
@@ -22,7 +20,7 @@ package Q_0778_Swim_In_Rising_Water;
  * You cannot reach point (1, 1) until time 3.
  * When the depth of water is 3, we can swim anywhere inside the grid.
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <img alt="" src="https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg" style="width: 404px; height: 405px;"/>
  * <pre>
  * <strong>Input:</strong> grid = [[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]]
@@ -30,8 +28,7 @@ package Q_0778_Swim_In_Rising_Water;
  * <strong>Explanation:</strong> The final route is shown.
  * We need to wait until time 16 so that (0, 0) and (4, 4) are connected.
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>n == grid.length</code></li>
  * <li><code>n == grid[i].length</code></li>

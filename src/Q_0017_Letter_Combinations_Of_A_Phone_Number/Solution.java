@@ -1,36 +1,37 @@
 package Q_0017_Letter_Combinations_Of_A_Phone_Number;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * LeetCode: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
- * NeetCode: https://neetcode.io/problems/letter-combinations-of-a-phone-number
- * LeetCode #17: Letter Combinations of a Phone Number
+ * <h1><a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/">LeetCode #17: Letter Combinations of a Phone Number</a></h1>
+ * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Hash Table, String, Backtracking</p>
  *
- * Given a string containing digits from {@code 2-9} inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+ * <h2>Problem</h2>
+ * <p>Given a string containing digits from <code>2-9</code> inclusive, return all possible letter combinations that the number could represent. Return the answer in <strong>any order</strong>.</p>
+ * <p>A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.</p>
  *
- * A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> digits = "23"
+ * <strong>Output:</strong> ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> digits = "2"
+ * <strong>Output:</strong> ["a","b","c"]
+ * </pre>
  *
- *
- * Example 1:
- *
- * Input: digits = "23"
- * Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
- *
- * Example 2:
- *
- * Input: digits = "2"
- * Output: ["a","b","c"]
- *
- *
- * Constraints:
- *
- * - {@code 1 <= digits.length <= 4}
- * - {@code digits[i]} is a digit in the range {@code ['2', '9']}.
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li><code>1 &lt;= digits.length &lt;= 4</code></li>
+ *   <li><code>digits[i]</code> is a digit in the range <code>['2', '9']</code>.</li>
+ * </ul>
  */
 
 class Solution {
-/**
+	/*
  * Implementation Notes (Standardized Deep-Dive)
  * =============================================
  *

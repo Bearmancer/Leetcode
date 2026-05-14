@@ -1,11 +1,10 @@
 package Q_0072_Edit_Distance;
 
 /**
- * <h2><a href="https://leetcode.com/problems/edit-distance/">LeetCode #72: Edit Distance</a></h2>
+ * <h1><a href="https://leetcode.com/problems/edit-distance/">LeetCode #72: Edit Distance</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> 2-D Dynamic Programming</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/edit-distance">neetcode.io/problems/edit-distance</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given two strings <code>word1</code> and <code>word2</code>, return <em>the minimum number of operations required to convert <code>word1</code> to <code>word2</code></em>.</p>
  * <p>You have the following three operations permitted on a word:</p>
  * <ul>
@@ -13,8 +12,7 @@ package Q_0072_Edit_Distance;
  * <li>Delete a character</li>
  * <li>Replace a character</li>
  * </ul>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> word1 = "horse", word2 = "ros"
  * <strong>Output:</strong> 3
@@ -23,7 +21,7 @@ package Q_0072_Edit_Distance;
  * rorse -&gt; rose (remove 'r')
  * rose -&gt; ros (remove 'e')
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> word1 = "intention", word2 = "execution"
  * <strong>Output:</strong> 5
@@ -34,8 +32,7 @@ package Q_0072_Edit_Distance;
  * exention -&gt; exection (replace 'n' with 'c')
  * exection -&gt; execution (insert 'u')
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>0 &lt;= word1.length, word2.length &lt;= 500</code></li>
  * <li><code>word1</code> and <code>word2</code> consist of lowercase English letters.</li>

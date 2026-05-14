@@ -4,75 +4,50 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
- * LeetCode: https://leetcode.com/problems/two-sum/
- * NeetCode: https://neetcode.io/problems/two-sum
- * LeetCode #1: Two Sum
+ * <h1><a href="https://leetcode.com/problems/two-sum/">LeetCode #1: Two Sum</a></h1>
+ * <p><b>Difficulty:</b> Easy &nbsp;|&nbsp; <b>Category:</b> Array, Hash Table</p>
  *
- * <h2>Problem Statement</h2>
- * <p>
- * Given an array of integers {@code nums} and an integer {@code target}, return
- * <em>indices</em> of the two numbers that add up to {@code target}. Each input
- * has exactly one solution, and you may not use the same element twice.
- * You may assume that you will never receive invalid input (i.e. a solution is
- * always guaranteed to exist).
+ * <h2>Problem</h2>
+ * <p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
+ * <p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>
+ * <p>You can return the answer in any order.</p>
  *
- * <h2>Overview of Approaches</h2>
- * <p>
- * Three approaches are implemented in this class, listed from optimal to naive:
- * <ol>
- *   <li><b>HashMap (one-pass)</b> — optimal O(n) solution</li>
- *   <li><b>Binary Search</b> — sort-then-search at O(n log n)</li>
- *   <li><b>Brute Force</b> — check every pair at O(n²)</li>
- * </ol>
- *
- * <h2>Complexity Comparison</h2>
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
  * <pre>
- * | Approach         | Time Complexity | Space Complexity | Notes                                       |
- * |------------------|-----------------|------------------|----------------------------------------------|
- * | Brute Force      | O(n²)           | O(1)             | Simplest; checks every pair                  |
- * | Binary Search    | O(n log n)      | O(n)             | Sort then binary search complement           |
- * | HashMap (1-pass) | O(n)            | O(n)             | Optimal; single pass with hash map           |
+ * <strong>Input:</strong> nums = [2,7,11,15], target = 9
+ * <strong>Output:</strong> [0,1]
+ * <strong>Explanation:</strong> Because nums[0] + nums[1] == 9, we return [0, 1].
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> nums = [3,2,4], target = 6
+ * <strong>Output:</strong> [1,2]
+ * </pre>
+ * <h3>Example 3:</h3>
+ * <pre>
+ * <strong>Input:</strong> nums = [3,3], target = 6
+ * <strong>Output:</strong> [0,1]
  * </pre>
  *
- * <h2>Design Rationale</h2>
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li><code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
+ *   <li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+ *   <li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
+ *   <li>Only one valid answer exists.</li>
+ * </ul>
  *
- * <h3>Brute Force</h3>
- * <p>
- * The naive baseline. Enumerate all pairs {@code (i, j)} where {@code i < j}.
- * No extra memory is required. Good for understanding the problem but
- * impractical for large inputs. We start {@code j} at {@code i + 1} to avoid
- * self-pairing and duplicate pair checks.
- *
- * <h3>Binary Search</h3>
- * <p>
- * Key insight: if we sort the array, for each element we can binary-search for
- * its complement ({@code target - element}). The challenge is that sorting
- * destroys original indices, so we wrap each value in a {@link Pair} record
- * that preserves the original index. Sorting costs O(n log n), then n binary
- * searches each costing O(log n) for a total of O(n log n). The
- * duplicate-handling logic (when complement equals the current value) is
- * necessary because the problem guarantees exactly one solution, so we must
- * correctly handle the case where {@code target = 2 * value}.
- *
- * <h3>HashMap (one-pass)</h3>
- * <p>
- * The optimal solution. As we iterate, for each number we ask "have I already
- * seen the complement?" If yes, we're done. If no, store this number in the
- * map. This is O(n) time because each lookup/insert is O(1) amortized, and
- * O(n) space for the map. The one-pass variant is preferred over two-pass
- * because it avoids a second iteration and handles duplicates naturally — we
- * only check backwards (already-seen elements), so we never pair an element
- * with itself.
+ * <h2>Approaches</h2>
+ * <p>This class provides three solution strategies, ordered by efficiency:</p>
+ * <ul>
+ *   <li><b>HashMap (one-pass)</b> — O(n) time, O(n) space. Optimal; single pass with hash map.</li>
+ *   <li><b>Binary Search</b> — O(n log n) time, O(n) space. Sort then binary search for complement.</li>
+ *   <li><b>Brute Force</b> — O(n&sup2;) time, O(1) space. Check every pair.</li>
+ * </ul>
  */
-// NOTE on method ordering: IntelliJ IDEA does NOT enforce any internal method
-// ordering — Java allows methods in any order and the compiler resolves forward
-// references regardless of textual position. The ordering here is deliberate for
-// readability: public API first, private implementations below, data structures
-// last. If one enables "Rearrange Code" in IntelliJ's Code → Rearrange Code
-// action with a configured code style scheme, IntelliJ CAN auto-sort methods by
-// visibility/modifier, but this is opt-in and not enforced by default.
 class Solution {
-/**
+	/*
  * Implementation Notes (Standardized Deep-Dive)
  * =============================================
  *

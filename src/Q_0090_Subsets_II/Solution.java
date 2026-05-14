@@ -1,32 +1,33 @@
 package Q_0090_Subsets_II;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * LeetCode: https://leetcode.com/problems/subsets-ii/
- * NeetCode: https://neetcode.io/problems/subsets-ii
- * LeetCode #90: Subsets II
+ * <h1><a href="https://leetcode.com/problems/subsets-ii/">LeetCode #90: Subsets II</a></h1>
+ * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Array, Backtracking, Bit Manipulation</p>
  *
- * Given an integer array {@code nums} that may contain duplicates, return all possible subsets (the power set).
+ * <h2>Problem</h2>
+ * <p>Given an integer array <code>nums</code> that may contain duplicates, return <em>all possible subsets (the power set)</em>.</p>
+ * <p>The solution set <strong>must not</strong> contain duplicate subsets. Return the solution in <strong>any order</strong>.</p>
  *
- * The solution set must not contain duplicate subsets. Return the solution in any order.
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> nums = [1,2,2]
+ * <strong>Output:</strong> [[],[1],[1,2],[1,2,2],[2],[2,2]]
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> nums = [0]
+ * <strong>Output:</strong> [[],[0]]
+ * </pre>
  *
- *
- * Example 1:
- *
- * Input: nums = [1,2,2]
- * Output: [[],[1],[1,2],[1,2,2],[2],[2,2]]
- *
- * Example 2:
- *
- * Input: nums = [0]
- * Output: [[],[0]]
- *
- *
- * Constraints:
- *
- * - {@code 1 <= nums.length <= 10}
- * - {@code -10 <= nums[i] <= 10}
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li><code>1 &lt;= nums.length &lt;= 10</code></li>
+ *   <li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
+ * </ul>
  */
 
 class Solution {

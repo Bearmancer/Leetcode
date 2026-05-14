@@ -1,11 +1,10 @@
 package Q_0994_Rotting_Oranges;
 
 /**
- * <h2><a href="https://leetcode.com/problems/rotting-oranges/">LeetCode #994: Rotting Oranges</a></h2>
+ * <h1><a href="https://leetcode.com/problems/rotting-oranges/">LeetCode #994: Rotting Oranges</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Graphs</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/rotting-oranges">neetcode.io/problems/rotting-oranges</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>You are given an <code>m x n</code> <code>grid</code> where each cell can have one of three values:</p>
  * <ul>
  * <li><code>0</code> representing an empty cell,</li>
@@ -14,27 +13,25 @@ package Q_0994_Rotting_Oranges;
  * </ul>
  * <p>Every minute, any fresh orange that is <strong>4-directionally adjacent</strong> to a rotten orange becomes rotten.</p>
  * <p>Return <em>the minimum number of minutes that must elapse until no cell has a fresh orange</em>. If <em>this is impossible, return</em> <code>-1</code>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <img alt="" src="https://assets.leetcode.com/uploads/2019/02/16/oranges.png" style="width: 650px; height: 137px;"/>
  * <pre>
  * <strong>Input:</strong> grid = [[2,1,1],[1,1,0],[0,1,1]]
  * <strong>Output:</strong> 4
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> grid = [[2,1,1],[0,1,1],[1,0,1]]
  * <strong>Output:</strong> -1
  * <strong>Explanation:</strong> The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.
  * </pre>
- * <p><strong class="example">Example 3:</strong></p>
+ * <h3>Example 3:</h3>
  * <pre>
  * <strong>Input:</strong> grid = [[0,2]]
  * <strong>Output:</strong> 0
  * <strong>Explanation:</strong> Since there are already no fresh oranges at minute 0, the answer is just 0.
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>m == grid.length</code></li>
  * <li><code>n == grid[i].length</code></li>

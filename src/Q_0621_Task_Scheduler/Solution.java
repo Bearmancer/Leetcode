@@ -1,15 +1,13 @@
 package Q_0621_Task_Scheduler;
 
 /**
- * <h2><a href="https://leetcode.com/problems/task-scheduler/">LeetCode #621: Task Scheduler</a></h2>
+ * <h1><a href="https://leetcode.com/problems/task-scheduler/">LeetCode #621: Task Scheduler</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Heap / Priority Queue</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/task-scheduler">neetcode.io/problems/task-scheduler</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>You are given an array of CPU <code>tasks</code>, each labeled with a letter from A to Z, and a number <code>n</code>. Each CPU interval can be idle or allow the completion of one task. Tasks can be completed in any order, but there's a constraint: there has to be a gap of <strong>at least</strong> <code>n</code> intervals between two tasks with the same label.</p>
  * <p>Return the <strong>minimum</strong> number of CPU intervals required to complete all tasks.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io" style="
  *     font-family: Menlo,sans-serif;
@@ -22,7 +20,7 @@ package Q_0621_Task_Scheduler;
  * <p><strong>Explanation:</strong> A possible sequence is: A -&gt; B -&gt; idle -&gt; A -&gt; B -&gt; idle -&gt; A -&gt; B.</p>
  * <p>After completing task A, you must wait two intervals before doing A again. The same applies to task B. In the 3<sup>rd</sup> interval, neither A nor B can be done, so you idle. By the 4<sup>th</sup> interval, you can do A again as 2 intervals have passed.</p>
  *
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io" style="
  *     font-family: Menlo,sans-serif;
@@ -35,7 +33,7 @@ package Q_0621_Task_Scheduler;
  * <p><strong>Explanation:</strong> A possible sequence is: A -&gt; B -&gt; C -&gt; D -&gt; A -&gt; B.</p>
  * <p>With a cooling interval of 1, you can repeat a task after just one other task.</p>
  *
- * <p><strong class="example">Example 3:</strong></p>
+ * <h3>Example 3:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io" style="
  *     font-family: Menlo,sans-serif;
@@ -48,8 +46,7 @@ package Q_0621_Task_Scheduler;
  * <p><strong>Explanation:</strong> A possible sequence is: A -&gt; B -&gt; idle -&gt; idle -&gt; A -&gt; B -&gt; idle -&gt; idle -&gt; A -&gt; B.</p>
  * <p>There are only two types of tasks, A and B, which need to be separated by 3 intervals. This leads to idling twice between repetitions of these tasks.</p>
  *
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= tasks.length &lt;= 10<sup>4</sup></code></li>
  * <li><code>tasks[i]</code> is an uppercase English letter.</li>

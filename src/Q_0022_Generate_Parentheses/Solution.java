@@ -1,24 +1,22 @@
 package Q_0022_Generate_Parentheses;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * <h2><a href="https://leetcode.com/problems/generate-parentheses/">LeetCode #22: Generate Parentheses</a></h2>
+ * <h1><a href="https://leetcode.com/problems/generate-parentheses/">LeetCode #22: Generate Parentheses</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Stack</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/generate-parentheses">https://neetcode.io/problems/generate-parentheses</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given <code>n</code> pairs of parentheses, write a function to <em>generate all combinations of well-formed parentheses</em>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre><strong>Input:</strong> n = 3
  * <strong>Output:</strong> ["((()))","(()())","(())()","()(())","()()()"]
- * </pre><p><strong class="example">Example 2:</strong></p>
+ * </pre><h3>Example 2:</h3>
  * <pre><strong>Input:</strong> n = 1
  * <strong>Output:</strong> ["()"]
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= n &lt;= 8</code></li>
  * </ul>

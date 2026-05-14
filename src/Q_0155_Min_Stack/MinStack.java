@@ -3,11 +3,11 @@ package Q_0155_Min_Stack;
 import java.util.Stack;
 
 /**
- * <h2><a href="https://leetcode.com/problems/min-stack/">LeetCode #155: Min Stack</a></h2>
+ * <h1><a href="https://leetcode.com/problems/min-stack/">LeetCode #155: Min Stack</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Stack</p>
  * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/min-stack">https://neetcode.io/problems/min-stack</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.</p>
  * <p>Implement the <code>MinStack</code> class:</p>
  * <ul>

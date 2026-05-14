@@ -1,48 +1,44 @@
 package Q_1514_Path_With_Maximum_Probability;
 
 /**
- * LeetCode: https://leetcode.com/problems/path-with-maximum-probability/
- * NeetCode: https://neetcode.io/problems/path-with-maximum-probability
- * LeetCode #1514: Path with Maximum Probability
+ * <h1><a href="https://leetcode.com/problems/path-with-maximum-probability/">LeetCode #1514: Path with Maximum Probability</a></h1>
+ * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Array, Graph, Heap (Priority Queue), Shortest Path</p>
  *
- * You are given an undirected weighted graph of {@code n} nodes (0-indexed), represented by an edge list where {@code edges[i] = [a, b]} is an undirected edge connecting the nodes {@code a} and {@code b} with a probability of success of traversing that edge {@code succProb[i]}.
+ * <h2>Problem</h2>
+ * <p>You are given an undirected weighted graph of <code>n</code> nodes (0-indexed), represented by an edge list where <code>edges[i] = [a, b]</code> is an undirected edge connecting the nodes <code>a</code> and <code>b</code> with a probability of success of traversing that edge <code>succProb[i]</code>.</p>
+ * <p>Given two nodes <code>start</code> and <code>end</code>, find the path with the maximum probability of success to go from <code>start</code> to <code>end</code> and return its success probability.</p>
+ * <p>If there is no path from <code>start</code> to <code>end</code>, <strong>return 0</strong>. Your answer will be accepted if it differs from the correct answer by at most <strong>1e-5</strong>.</p>
  *
- * Given two nodes {@code start} and {@code end}, find the path with the maximum probability of success to go from {@code start} to {@code end} and return its success probability.
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start = 0, end = 2
+ * <strong>Output:</strong> 0.25000
+ * <strong>Explanation:</strong> There are two paths from start to end, one having a probability of success = 0.2 and the other has 0.5 * 0.5 = 0.25.
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.3], start = 0, end = 2
+ * <strong>Output:</strong> 0.30000
+ * </pre>
+ * <h3>Example 3:</h3>
+ * <pre>
+ * <strong>Input:</strong> n = 3, edges = [[0,1]], succProb = [0.5], start = 0, end = 2
+ * <strong>Output:</strong> 0.00000
+ * <strong>Explanation:</strong> There is no path between 0 and 2.
+ * </pre>
  *
- * If there is no path from {@code start} to {@code end}, return 0. Your answer will be accepted if it differs from the correct answer by at most 1e-5.
- *
- *
- * Example 1:
- *
- *
- * Input: n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start = 0, end = 2
- * Output: 0.25000
- * Explanation: There are two paths from start to end, one having a probability of success = 0.2 and the other has 0.5 * 0.5 = 0.25.
- *
- * Example 2:
- *
- *
- * Input: n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.3], start = 0, end = 2
- * Output: 0.30000
- *
- * Example 3:
- *
- *
- * Input: n = 3, edges = [[0,1]], succProb = [0.5], start = 0, end = 2
- * Output: 0.00000
- * Explanation: There is no path between 0 and 2.
- *
- *
- * Constraints:
- *
- * - {@code 2 <= n <= 10^4}
- * - {@code 0 <= start, end < n}
- * - {@code start != end}
- * - {@code 0 <= a, b < n}
- * - {@code a != b}
- * - {@code 0 <= succProb.length == edges.length <= 2*10^4}
- * - {@code 0 <= succProb[i] <= 1}
- * - There is at most one edge between every two nodes.
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li><code>2 &lt;= n &lt;= 10<sup>4</sup></code></li>
+ *   <li><code>0 &lt;= start, end &lt; n</code></li>
+ *   <li><code>start != end</code></li>
+ *   <li><code>0 &lt;= a, b &lt; n</code></li>
+ *   <li><code>a != b</code></li>
+ *   <li><code>0 &lt;= succProb.length == edges.length &lt;= 2*10<sup>4</sup></code></li>
+ *   <li><code>0 &lt;= succProb[i] &lt;= 1</code></li>
+ *   <li>There is at most one edge between every two nodes.</li>
+ * </ul>
  */
 
 class Solution {

@@ -1,15 +1,13 @@
 package Q_0200_Number_Of_Islands;
 
 /**
- * <h2><a href="https://leetcode.com/problems/number-of-islands/">LeetCode #200: Number of Islands</a></h2>
+ * <h1><a href="https://leetcode.com/problems/number-of-islands/">LeetCode #200: Number of Islands</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Graphs</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/number-of-islands">neetcode.io/problems/number-of-islands</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given an <code>m x n</code> 2D binary grid <code>grid</code> which represents a map of <code>'1'</code>s (land) and <code>'0'</code>s (water), return <em>the number of islands</em>.</p>
  * <p>An <strong>island</strong> is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> grid = [
  *   ["1","1","1","1","0"],
@@ -19,7 +17,7 @@ package Q_0200_Number_Of_Islands;
  * ]
  * <strong>Output:</strong> 1
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> grid = [
  *   ["1","1","0","0","0"],
@@ -29,8 +27,7 @@ package Q_0200_Number_Of_Islands;
  * ]
  * <strong>Output:</strong> 3
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>m == grid.length</code></li>
  * <li><code>n == grid[i].length</code></li>

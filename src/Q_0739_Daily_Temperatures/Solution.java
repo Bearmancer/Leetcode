@@ -1,25 +1,22 @@
 package Q_0739_Daily_Temperatures;
 
 /**
- * <h2><a href="https://leetcode.com/problems/daily-temperatures/">LeetCode #739: Daily Temperatures</a></h2>
+ * <h1><a href="https://leetcode.com/problems/daily-temperatures/">LeetCode #739: Daily Temperatures</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Stack</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/daily-temperatures">https://neetcode.io/problems/daily-temperatures</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given an array of integers <code>temperatures</code> represents the daily temperatures, return <em>an array</em> <code>answer</code> <em>such that</em> <code>answer[i]</code> <em>is the number of days you have to wait after the</em> <code>i<sup>th</sup></code> <em>day to get a warmer temperature</em>. If there is no future day for which this is possible, keep <code>answer[i] == 0</code> instead.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre><strong>Input:</strong> temperatures = [73,74,75,71,69,72,76,73]
  * <strong>Output:</strong> [1,1,4,2,1,1,0,0]
- * </pre><p><strong class="example">Example 2:</strong></p>
+ * </pre><h3>Example 2:</h3>
  * <pre><strong>Input:</strong> temperatures = [30,40,50,60]
  * <strong>Output:</strong> [1,1,1,0]
- * </pre><p><strong class="example">Example 3:</strong></p>
+ * </pre><h3>Example 3:</h3>
  * <pre><strong>Input:</strong> temperatures = [30,60,90]
  * <strong>Output:</strong> [1,1,0]
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= temperatures.length &lt;= 10<sup>5</sup></code></li>
  * <li><code>30 &lt;= temperatures[i] &lt;= 100</code></li>

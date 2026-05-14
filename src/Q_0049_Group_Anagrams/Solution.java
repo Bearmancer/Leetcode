@@ -3,47 +3,39 @@ package Q_0049_Group_Anagrams;
 import java.util.*;
 
 /**
- * LeetCode: https://leetcode.com/problems/group-anagrams/
- * NeetCode: https://neetcode.io/problems/group-anagrams
- * LeetCode #49: Group Anagrams
+ * <h1><a href="https://leetcode.com/problems/group-anagrams/">LeetCode #49: Group Anagrams</a></h1>
+ * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Array, Hash Table, String, Sorting</p>
  *
- * Given an array of strings {@code strs}, group the anagrams together. You can return the answer in any order.
+ * <h2>Problem</h2>
+ * <p>Given an array of strings <code>strs</code>, group the anagrams together. You can return the answer in <strong>any order</strong>.</p>
  *
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> strs = ["eat","tea","tan","ate","nat","bat"]
+ * <strong>Output:</strong> [["bat"],["nat","tan"],["ate","eat","tea"]]
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> strs = [""]
+ * <strong>Output:</strong> [[""]]
+ * </pre>
+ * <h3>Example 3:</h3>
+ * <pre>
+ * <strong>Input:</strong> strs = ["a"]
+ * <strong>Output:</strong> [["a"]]
+ * </pre>
  *
- * Example 1:
- *
- * Input: strs = ["eat","tea","tan","ate","nat","bat"]
- *
- * Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
- *
- * Explanation:
- *
- * - There is no string in strs that can be rearranged to form {@code "bat"}.
- * - The strings {@code "nat"} and {@code "tan"} are anagrams as they can be rearranged to form each other.
- * - The strings {@code "ate"}, {@code "eat"}, and {@code "tea"} are anagrams as they can be rearranged to form each other.
- *
- * Example 2:
- *
- * Input: strs = [""]
- *
- * Output: [[""]]
- *
- * Example 3:
- *
- * Input: strs = ["a"]
- *
- * Output: [["a"]]
- *
- *
- * Constraints:
- *
- * - {@code 1 <= strs.length <= 10^4}
- * - {@code 0 <= strs[i].length <= 100}
- * - {@code strs[i]} consists of lowercase English letters.
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li><code>1 &lt;= strs.length &lt;= 10<sup>4</sup></code></li>
+ *   <li><code>0 &lt;= strs[i].length &lt;= 100</code></li>
+ *   <li><code>strs[i]</code> consists of lowercase English letters.</li>
+ * </ul>
  */
 
 class Solution {
-/**
+	/*
  * Implementation Notes (Standardized Deep-Dive)
  * =============================================
  *

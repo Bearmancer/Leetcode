@@ -1,29 +1,26 @@
 package Q_0152_Maximum_Product_Subarray;
 
 /**
- * <h2><a href="https://leetcode.com/problems/maximum-product-subarray/">LeetCode #152: Maximum Product Subarray</a></h2>
+ * <h1><a href="https://leetcode.com/problems/maximum-product-subarray/">LeetCode #152: Maximum Product Subarray</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> 1-D Dynamic Programming</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/maximum-product-subarray">neetcode.io/problems/maximum-product-subarray</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given an integer array <code>nums</code>, find a <span data-keyword="subarray-nonempty">subarray</span> that has the largest product, and return <em>the product</em>.</p>
  * <p>The test cases are generated so that the answer will fit in a <strong>32-bit</strong> integer.</p>
  * <p><strong>Note</strong> that the product of an array with a single element is the value of that element.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> nums = [2,3,-2,4]
  * <strong>Output:</strong> 6
  * <strong>Explanation:</strong> [2,3] has the largest product 6.
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> nums = [-2,0,-1]
  * <strong>Output:</strong> 0
  * <strong>Explanation:</strong> The result cannot be 2, because [-2,-1] is not a subarray.
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>4</sup></code></li>
  * <li><code>-10 &lt;= nums[i] &lt;= 10</code></li>

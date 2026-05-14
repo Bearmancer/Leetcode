@@ -1,15 +1,13 @@
 package Q_0023_Merge_K_Sorted_Lists;
 
 /**
- * <h2><a href="https://leetcode.com/problems/merge-k-sorted-lists/">LeetCode #23: Merge k Sorted Lists</a></h2>
+ * <h1><a href="https://leetcode.com/problems/merge-k-sorted-lists/">LeetCode #23: Merge k Sorted Lists</a></h1>
  * <p><b>Difficulty:</b> Hard &nbsp;|&nbsp; <b>Category:</b> Linked List</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/merge-k-sorted-lists">neetcode.io/problems/merge-k-sorted-lists</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>You are given an array of <code>k</code> linked-lists <code>lists</code>, each linked-list is sorted in ascending order.</p>
  * <p><em>Merge all the linked-lists into one sorted linked-list and return it.</em></p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> lists = [[1,4,5],[1,3,4],[2,6]]
  * <strong>Output:</strong> [1,1,2,3,4,4,5,6]
@@ -22,18 +20,17 @@ package Q_0023_Merge_K_Sorted_Lists;
  * merging them into one sorted linked list:
  * 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> lists = []
  * <strong>Output:</strong> []
  * </pre>
- * <p><strong class="example">Example 3:</strong></p>
+ * <h3>Example 3:</h3>
  * <pre>
  * <strong>Input:</strong> lists = [[]]
  * <strong>Output:</strong> []
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>k == lists.length</code></li>
  * <li><code>0 &lt;= k &lt;= 10<sup>4</sup></code></li>

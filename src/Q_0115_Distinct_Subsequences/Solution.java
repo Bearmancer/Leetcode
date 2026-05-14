@@ -1,15 +1,13 @@
 package Q_0115_Distinct_Subsequences;
 
 /**
- * <h2><a href="https://leetcode.com/problems/distinct-subsequences/">LeetCode #115: Distinct Subsequences</a></h2>
+ * <h1><a href="https://leetcode.com/problems/distinct-subsequences/">LeetCode #115: Distinct Subsequences</a></h1>
  * <p><b>Difficulty:</b> Hard &nbsp;|&nbsp; <b>Category:</b> 2-D Dynamic Programming</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/distinct-subsequences">neetcode.io/problems/distinct-subsequences</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given two strings s and t, return <i>the number of distinct</i> <b><i>subsequences</i></b><i> of </i>s<i> which equals </i>t.</p>
  * <p>The test cases are generated so that the answer fits on a 32-bit signed integer.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> s = "rabbbit", t = "rabbit"
  * <strong>Output:</strong> 3
@@ -19,7 +17,7 @@ package Q_0115_Distinct_Subsequences;
  * <code><strong><u>ra</u></strong>b<strong><u>bbit</u></strong></code>
  * <code><strong><u>rab</u></strong>b<strong><u>bit</u></strong></code>
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> s = "babgbag", t = "bag"
  * <strong>Output:</strong> 5
@@ -30,8 +28,7 @@ package Q_0115_Distinct_Subsequences;
  * <code><u><strong>b</strong></u>abgb<strong><u>ag</u></strong></code>
  * <code>ba<u><strong>b</strong></u>gb<u><strong>ag</strong></u></code>
  * <code>babg<strong><u>bag</u></strong></code></pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= s.length, t.length &lt;= 1000</code></li>
  * <li><code>s</code> and <code>t</code> consist of English letters.</li>

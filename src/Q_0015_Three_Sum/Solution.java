@@ -1,49 +1,49 @@
 package Q_0015_Three_Sum;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * LeetCode: https://leetcode.com/problems/3sum/
- * NeetCode: https://neetcode.io/problems/3sum
- * LeetCode #15: Three Sum
+ * <h1><a href="https://leetcode.com/problems/3sum/">LeetCode #15: 3Sum</a></h1>
+ * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Array, Two Pointers, Sorting</p>
  *
- * Given an integer array nums, return all the triplets {@code [nums[i], nums[j], nums[k]]} such that {@code i != j}, {@code i != k}, and {@code j != k}, and {@code nums[i] + nums[j] + nums[k] == 0}.
+ * <h2>Problem</h2>
+ * <p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
+ * <p>Notice that the solution set must not contain duplicate triplets.</p>
  *
- * Notice that the solution set must not contain duplicate triplets.
- *
- *
- * Example 1:
- *
- * Input: nums = [-1,0,1,2,-1,-4]
- * Output: [[-1,-1,2],[-1,0,1]]
- * Explanation:
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> nums = [-1,0,1,2,-1,-4]
+ * <strong>Output:</strong> [[-1,-1,2],[-1,0,1]]
+ * <strong>Explanation:</strong>
  * nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
  * nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
  * nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
  * The distinct triplets are [-1,0,1] and [-1,-1,2].
  * Notice that the order of the output and the order of the triplets does not matter.
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> nums = [0,1,1]
+ * <strong>Output:</strong> []
+ * <strong>Explanation:</strong> The only possible triplet does not sum up to 0.
+ * </pre>
+ * <h3>Example 3:</h3>
+ * <pre>
+ * <strong>Input:</strong> nums = [0,0,0]
+ * <strong>Output:</strong> [[0,0,0]]
+ * </pre>
  *
- * Example 2:
- *
- * Input: nums = [0,1,1]
- * Output: []
- * Explanation: The only possible triplet does not sum up to 0.
- *
- * Example 3:
- *
- * Input: nums = [0,0,0]
- * Output: [[0,0,0]]
- * Explanation: The only possible triplet sums up to 0.
- *
- *
- * Constraints:
- *
- * - {@code 3 <= nums.length <= 3000}
- * - {@code -10^5 <= nums[i] <= 10^5}
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+ *   <li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
+ * </ul>
  */
 
 class Solution {
-/**
+	/*
  * Implementation Notes (Standardized Deep-Dive)
  * =============================================
  *

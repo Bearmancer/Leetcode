@@ -1,33 +1,30 @@
 package Q_0056_Merge_Intervals;
 
 /**
- * <h2><a href="https://leetcode.com/problems/merge-intervals/">LeetCode #56: Merge Intervals</a></h2>
+ * <h1><a href="https://leetcode.com/problems/merge-intervals/">LeetCode #56: Merge Intervals</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Intervals</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/merge-intervals">neetcode.io/problems/merge-intervals</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given an array of <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, merge all overlapping intervals, and return <em>an array of the non-overlapping intervals that cover all the intervals in the input</em>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> intervals = [[1,3],[2,6],[8,10],[15,18]]
  * <strong>Output:</strong> [[1,6],[8,10],[15,18]]
  * <strong>Explanation:</strong> Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> intervals = [[1,4],[4,5]]
  * <strong>Output:</strong> [[1,5]]
  * <strong>Explanation:</strong> Intervals [1,4] and [4,5] are considered overlapping.
  * </pre>
- * <p><strong class="example">Example 3:</strong></p>
+ * <h3>Example 3:</h3>
  * <pre>
  * <strong>Input:</strong> intervals = [[4,7],[1,4]]
  * <strong>Output:</strong> [[1,7]]
  * <strong>Explanation:</strong> Intervals [1,4] and [4,7] are considered overlapping.
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= intervals.length &lt;= 10<sup>4</sup></code></li>
  * <li><code>intervals[i].length == 2</code></li>

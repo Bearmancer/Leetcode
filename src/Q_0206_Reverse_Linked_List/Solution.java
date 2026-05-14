@@ -3,36 +3,37 @@ package Q_0206_Reverse_Linked_List;
 import java.util.ArrayList;
 
 /**
- * LeetCode: https://leetcode.com/problems/reverse-linked-list/
- * NeetCode: https://neetcode.io/problems/reverse-linked-list
- * LeetCode #206: Reverse Linked List
+ * <h1><a href="https://leetcode.com/problems/reverse-linked-list/">LeetCode #206: Reverse Linked List</a></h1>
+ * <p><b>Difficulty:</b> Easy &nbsp;|&nbsp; <b>Category:</b> Linked List, Recursion</p>
  *
- * Given the {@code head} of a singly linked list, reverse the list, and return the reversed list.
+ * <h2>Problem</h2>
+ * <p>Given the <code>head</code> of a singly linked list, reverse the list, and return <em>the reversed list</em>.</p>
  *
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> head = [1,2,3,4,5]
+ * <strong>Output:</strong> [5,4,3,2,1]
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> head = [1,2]
+ * <strong>Output:</strong> [2,1]
+ * </pre>
+ * <h3>Example 3:</h3>
+ * <pre>
+ * <strong>Input:</strong> head = []
+ * <strong>Output:</strong> []
+ * </pre>
  *
- * Example 1:
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li>The number of nodes in the list is the range <code>[0, 5000]</code>.</li>
+ *   <li><code>-5000 &lt;= Node.val &lt;= 5000</code></li>
+ * </ul>
  *
- * Input: head = [1,2,3,4,5]
- * Output: [5,4,3,2,1]
- *
- * Example 2:
- *
- * Input: head = [1,2]
- * Output: [2,1]
- *
- * Example 3:
- *
- * Input: head = []
- * Output: []
- *
- *
- * Constraints:
- *
- * - The number of nodes in the list is the range {@code [0, 5000]}.
- * - {@code -5000 <= Node.val <= 5000}
- *
- *
- * Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
+ * <h2>Follow-up</h2>
+ * <p>A linked list can be reversed either iteratively or recursively. Could you implement both?</p>
  */
 
 class Solution {

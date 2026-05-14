@@ -1,34 +1,34 @@
 package Q_0051_N_Queens;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * LeetCode: https://leetcode.com/problems/n-queens/
- * NeetCode: https://neetcode.io/problems/n-queens
- * LeetCode #51: N-Queens
+ * <h1><a href="https://leetcode.com/problems/n-queens/">LeetCode #51: N-Queens</a></h1>
+ * <p><b>Difficulty:</b> Hard &nbsp;|&nbsp; <b>Category:</b> Array, Backtracking</p>
  *
- * The n-queens puzzle is the problem of placing {@code n} queens on an {@code n x n} chessboard such that no two queens attack each other.
+ * <h2>Problem</h2>
+ * <p>The <strong>n-queens</strong> puzzle is the problem of placing <code>n</code> queens on an <code>n x n</code> chessboard such that no two queens attack each other.</p>
+ * <p>Given an integer <code>n</code>, return <em>all distinct solutions to the <strong>n-queens puzzle</strong></em>. You may return the answer in <strong>any order</strong>.</p>
+ * <p>Each solution contains a distinct board configuration of the n-queens' placement, where <code>'Q'</code> and <code>'.'</code> both indicate a queen and an empty space, respectively.</p>
  *
- * Given an integer {@code n}, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> n = 4
+ * <strong>Output:</strong> [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+ * <strong>Explanation:</strong> There exist two distinct solutions to the 4-queens puzzle as shown above
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> n = 1
+ * <strong>Output:</strong> [["Q"]]
+ * </pre>
  *
- * Each solution contains a distinct board configuration of the n-queens' placement, where {@code 'Q'} and {@code '.'} both indicate a queen and an empty space, respectively.
- *
- *
- * Example 1:
- *
- * Input: n = 4
- * Output: [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
- * Explanation: There exist two distinct solutions to the 4-queens puzzle as shown above
- *
- * Example 2:
- *
- * Input: n = 1
- * Output: [["Q"]]
- *
- *
- * Constraints:
- *
- * - {@code 1 <= n <= 9}
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li><code>1 &lt;= n &lt;= 9</code></li>
+ * </ul>
  */
 
 class Solution {

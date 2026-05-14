@@ -1,29 +1,26 @@
 package Q_0684_Redundant_Connection;
 
 /**
- * <h2><a href="https://leetcode.com/problems/redundant-connection/">LeetCode #684: Redundant Connection</a></h2>
+ * <h1><a href="https://leetcode.com/problems/redundant-connection/">LeetCode #684: Redundant Connection</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Graphs</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/redundant-connection">neetcode.io/problems/redundant-connection</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>In this problem, a tree is an <strong>undirected graph</strong> that is connected and has no cycles.</p>
  * <p>You are given a graph that started as a tree with <code>n</code> nodes labeled from <code>1</code> to <code>n</code>, with one additional edge added. The added edge has two <strong>different</strong> vertices chosen from <code>1</code> to <code>n</code>, and was not an edge that already existed. The graph is represented as an array <code>edges</code> of length <code>n</code> where <code>edges[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> indicates that there is an edge between nodes <code>a<sub>i</sub></code> and <code>b<sub>i</sub></code> in the graph.</p>
  * <p>Return <em>an edge that can be removed so that the resulting graph is a tree of </em><code>n</code><em> nodes</em>. If there are multiple answers, return the answer that occurs last in the input.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <img alt="" src="https://assets.leetcode.com/uploads/2021/05/02/reduntant1-1-graph.jpg" style="width: 222px; height: 222px;"/>
  * <pre>
  * <strong>Input:</strong> edges = [[1,2],[1,3],[2,3]]
  * <strong>Output:</strong> [2,3]
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <img alt="" src="https://assets.leetcode.com/uploads/2021/05/02/reduntant1-2-graph.jpg" style="width: 382px; height: 222px;"/>
  * <pre>
  * <strong>Input:</strong> edges = [[1,2],[2,3],[3,4],[1,4],[1,5]]
  * <strong>Output:</strong> [1,4]
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>n == edges.length</code></li>
  * <li><code>3 &lt;= n &lt;= 1000</code></li>

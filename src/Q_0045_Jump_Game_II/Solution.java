@@ -1,11 +1,10 @@
 package Q_0045_Jump_Game_II;
 
 /**
- * <h2><a href="https://leetcode.com/problems/jump-game-ii/">LeetCode #45: Jump Game II</a></h2>
+ * <h1><a href="https://leetcode.com/problems/jump-game-ii/">LeetCode #45: Jump Game II</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Greedy</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/jump-game-ii">neetcode.io/problems/jump-game-ii</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>You are given a <strong>0-indexed</strong> array of integers <code>nums</code> of length <code>n</code>. You are initially positioned at index 0.</p>
  * <p>Each element <code>nums[i]</code> represents the maximum length of a forward jump from index <code>i</code>. In other words, if you are at index <code>i</code>, you can jump to any index <code>(i + j)</code> where:</p>
  * <ul>
@@ -13,20 +12,18 @@ package Q_0045_Jump_Game_II;
  * <li><code>i + j &lt; n</code></li>
  * </ul>
  * <p>Return <em>the minimum number of jumps to reach index </em><code>n - 1</code>. The test cases are generated such that you can reach index <code>n - 1</code>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> nums = [2,3,1,1,4]
  * <strong>Output:</strong> 2
  * <strong>Explanation:</strong> The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> nums = [2,3,0,1,4]
  * <strong>Output:</strong> 2
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
  * <li><code>0 &lt;= nums[i] &lt;= 1000</code></li>

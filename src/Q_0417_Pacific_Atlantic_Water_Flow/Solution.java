@@ -1,19 +1,18 @@
 package Q_0417_Pacific_Atlantic_Water_Flow;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * <h2><a href="https://leetcode.com/problems/pacific-atlantic-water-flow/">LeetCode #417: Pacific Atlantic Water Flow</a></h2>
+ * <h1><a href="https://leetcode.com/problems/pacific-atlantic-water-flow/">LeetCode #417: Pacific Atlantic Water Flow</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Graphs</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/pacific-atlantic-water-flow">neetcode.io/problems/pacific-atlantic-water-flow</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>There is an <code>m x n</code> rectangular island that borders both the <strong>Pacific Ocean</strong> and <strong>Atlantic Ocean</strong>. The <strong>Pacific Ocean</strong> touches the island's left and top edges, and the <strong>Atlantic Ocean</strong> touches the island's right and bottom edges.</p>
  * <p>The island is partitioned into a grid of square cells. You are given an <code>m x n</code> integer matrix <code>heights</code> where <code>heights[r][c]</code> represents the <strong>height above sea level</strong> of the cell at coordinate <code>(r, c)</code>.</p>
  * <p>The island receives a lot of rain, and the rain water can flow to neighboring cells directly north, south, east, and west if the neighboring cell's height is <strong>less than or equal to</strong> the current cell's height. Water can flow from any cell adjacent to an ocean into the ocean.</p>
  * <p>Return <em>a <strong>2D list</strong> of grid coordinates </em><code>result</code><em> where </em><code>result[i] = [r<sub>i</sub>, c<sub>i</sub>]</code><em> denotes that rain water can flow from cell </em><code>(r<sub>i</sub>, c<sub>i</sub>)</code><em> to <strong>both</strong> the Pacific and Atlantic oceans</em>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <img alt="" src="https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg" style="width: 400px; height: 400px;"/>
  * <pre>
  * <strong>Input:</strong> heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]
@@ -35,14 +34,13 @@ import java.util.*;
  *        [4,0] -&gt; Atlantic Ocean
  * Note that there are other possible paths for these cells to flow to the Pacific and Atlantic oceans.
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> heights = [[1]]
  * <strong>Output:</strong> [[0,0]]
  * <strong>Explanation:</strong> The water can flow from the only cell to the Pacific and Atlantic oceans.
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>m == heights.length</code></li>
  * <li><code>n == heights[r].length</code></li>

@@ -1,11 +1,11 @@
 package Q_0211_Design_Add_And_Search_Words_Data_Structure;
 
 /**
- * <h2><a href="https://leetcode.com/problems/design-add-and-search-words-data-structure/">LeetCode #211: Design Add and Search Words Data Structure</a></h2>
+ * <h1><a href="https://leetcode.com/problems/design-add-and-search-words-data-structure/">LeetCode #211: Design Add and Search Words Data Structure</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Tries</p>
  * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/design-add-and-search-words-data-structure">neetcode.io/problems/design-add-and-search-words-data-structure</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Design a data structure that supports adding new words and finding if a string matches any previously added string.</p>
  * <p>Implement the <code>WordDictionary</code> class:</p>
  * <ul>

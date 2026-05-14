@@ -1,32 +1,29 @@
 package Q_0226_Invert_Binary_Tree;
 
 /**
- * <h2><a href="https://leetcode.com/problems/invert-binary-tree/">LeetCode #226: Invert Binary Tree</a></h2>
+ * <h1><a href="https://leetcode.com/problems/invert-binary-tree/">LeetCode #226: Invert Binary Tree</a></h1>
  * <p><b>Difficulty:</b> Easy &nbsp;|&nbsp; <b>Category:</b> Trees</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/invert-binary-tree">neetcode.io/problems/invert-binary-tree</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given the <code>root</code> of a binary tree, invert the tree, and return <em>its root</em>.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <img alt="" src="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg" style="width: 500px; height: 165px;"/>
  * <pre>
  * <strong>Input:</strong> root = [4,2,7,1,3,6,9]
  * <strong>Output:</strong> [4,7,2,9,6,3,1]
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <img alt="" src="https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg" style="width: 500px; height: 120px;"/>
  * <pre>
  * <strong>Input:</strong> root = [2,1,3]
  * <strong>Output:</strong> [2,3,1]
  * </pre>
- * <p><strong class="example">Example 3:</strong></p>
+ * <h3>Example 3:</h3>
  * <pre>
  * <strong>Input:</strong> root = []
  * <strong>Output:</strong> []
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
  * <li><code>-100 &lt;= Node.val &lt;= 100</code></li>

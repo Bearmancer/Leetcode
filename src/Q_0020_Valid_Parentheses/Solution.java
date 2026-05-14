@@ -1,11 +1,10 @@
 package Q_0020_Valid_Parentheses;
 
 /**
- * <h2><a href="https://leetcode.com/problems/valid-parentheses/">LeetCode #20: Valid Parentheses</a></h2>
+ * <h1><a href="https://leetcode.com/problems/valid-parentheses/">LeetCode #20: Valid Parentheses</a></h1>
  * <p><b>Difficulty:</b> Easy &nbsp;|&nbsp; <b>Category:</b> Stack</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/valid-parentheses">https://neetcode.io/problems/valid-parentheses</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>Given a string <code>s</code> containing just the characters <code>'('</code>, <code>')'</code>, <code>'{'</code>, <code>'}'</code>, <code>'['</code> and <code>']'</code>, determine if the input string is valid.</p>
  * <p>An input string is valid if:</p>
  * <ol>
@@ -13,34 +12,32 @@ package Q_0020_Valid_Parentheses;
  * <li>Open brackets must be closed in the correct order.</li>
  * <li>Every close bracket has a corresponding open bracket of the same type.</li>
  * </ol>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">s = "()"</span></p>
  * <p><strong>Output:</strong> <span class="example-io">true</span></p>
  *
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">s = "()[]{}"</span></p>
  * <p><strong>Output:</strong> <span class="example-io">true</span></p>
  *
- * <p><strong class="example">Example 3:</strong></p>
+ * <h3>Example 3:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">s = "(]"</span></p>
  * <p><strong>Output:</strong> <span class="example-io">false</span></p>
  *
- * <p><strong class="example">Example 4:</strong></p>
+ * <h3>Example 4:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">s = "([])"</span></p>
  * <p><strong>Output:</strong> <span class="example-io">true</span></p>
  *
- * <p><strong class="example">Example 5:</strong></p>
+ * <h3>Example 5:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">s = "([)]"</span></p>
  * <p><strong>Output:</strong> <span class="example-io">false</span></p>
  *
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
  * <li><code>s</code> consists of parentheses only <code>'()[]{}'</code>.</li>

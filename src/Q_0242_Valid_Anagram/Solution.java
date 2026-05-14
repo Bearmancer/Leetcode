@@ -4,37 +4,36 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
- * LeetCode: https://leetcode.com/problems/valid-anagram/
- * NeetCode: https://neetcode.io/problems/valid-anagram
- * LeetCode #242: Valid Anagram
+ * <h1><a href="https://leetcode.com/problems/valid-anagram/">LeetCode #242: Valid Anagram</a></h1>
+ * <p><b>Difficulty:</b> Easy &nbsp;|&nbsp; <b>Category:</b> Hash Table, String, Sorting</p>
  *
- * Given two strings {@code s} and {@code t}, return {@code true} if {@code t} is an anagram of {@code s}, and {@code false} otherwise.
+ * <h2>Problem</h2>
+ * <p>Given two strings <code>s</code> and <code>t</code>, return <code>true</code> if <code>t</code> is an anagram of <code>s</code>, and <code>false</code> otherwise.</p>
  *
+ * <h2>Examples</h2>
+ * <h3>Example 1:</h3>
+ * <pre>
+ * <strong>Input:</strong> s = "anagram", t = "nagaram"
+ * <strong>Output:</strong> true
+ * </pre>
+ * <h3>Example 2:</h3>
+ * <pre>
+ * <strong>Input:</strong> s = "rat", t = "car"
+ * <strong>Output:</strong> false
+ * </pre>
  *
- * Example 1:
+ * <h2>Constraints</h2>
+ * <ul>
+ *   <li><code>1 &lt;= s.length, t.length &lt;= 5 * 10<sup>4</sup></code></li>
+ *   <li><code>s</code> and <code>t</code> consist of lowercase English letters.</li>
+ * </ul>
  *
- * Input: s = "anagram", t = "nagaram"
- *
- * Output: true
- *
- * Example 2:
- *
- * Input: s = "rat", t = "car"
- *
- * Output: false
- *
- *
- * Constraints:
- *
- * - {@code 1 <= s.length, t.length <= 5 * 10^4}
- * - {@code s} and {@code t} consist of lowercase English letters.
- *
- *
- * Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+ * <h2>Follow-up</h2>
+ * <p>What if the inputs contain Unicode characters? How would you adapt your solution to such a case?</p>
  */
 
 class Solution {
-/**
+	/*
  * Implementation Notes (Standardized Deep-Dive)
  * =============================================
  *

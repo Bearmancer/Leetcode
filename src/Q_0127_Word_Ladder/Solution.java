@@ -1,13 +1,12 @@
 package Q_0127_Word_Ladder;
 
-import java.util.*;
+import java.util.List;
 
 /**
- * <h2><a href="https://leetcode.com/problems/word-ladder/">LeetCode #127: Word Ladder</a></h2>
+ * <h1><a href="https://leetcode.com/problems/word-ladder/">LeetCode #127: Word Ladder</a></h1>
  * <p><b>Difficulty:</b> Hard &nbsp;|&nbsp; <b>Category:</b> Graphs</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/word-ladder">neetcode.io/problems/word-ladder</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>A <strong>transformation sequence</strong> from word <code>beginWord</code> to word <code>endWord</code> using a dictionary <code>wordList</code> is a sequence of words <code>beginWord -&gt; s<sub>1</sub> -&gt; s<sub>2</sub> -&gt; ... -&gt; s<sub>k</sub></code> such that:</p>
  * <ul>
  * <li>Every adjacent pair of words differs by a single letter.</li>
@@ -15,21 +14,19 @@ import java.util.*;
  * <li><code>s<sub>k</sub> == endWord</code></li>
  * </ul>
  * <p>Given two words, <code>beginWord</code> and <code>endWord</code>, and a dictionary <code>wordList</code>, return <em>the <strong>number of words</strong> in the <strong>shortest transformation sequence</strong> from</em> <code>beginWord</code> <em>to</em> <code>endWord</code><em>, or </em><code>0</code><em> if no such sequence exists.</em></p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  * <pre>
  * <strong>Input:</strong> beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
  * <strong>Output:</strong> 5
  * <strong>Explanation:</strong> One shortest transformation sequence is "hit" -&gt; "hot" -&gt; "dot" -&gt; "dog" -&gt; cog", which is 5 words long.
  * </pre>
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  * <pre>
  * <strong>Input:</strong> beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]
  * <strong>Output:</strong> 0
  * <strong>Explanation:</strong> The endWord "cog" is not in wordList, therefore there is no valid transformation sequence.
  * </pre>
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>1 &lt;= beginWord.length &lt;= 10</code></li>
  * <li><code>endWord.length == beginWord.length</code></li>

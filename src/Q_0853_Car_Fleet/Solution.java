@@ -1,19 +1,17 @@
 package Q_0853_Car_Fleet;
 
 /**
- * <h2><a href="https://leetcode.com/problems/car-fleet/">LeetCode #853: Car Fleet</a></h2>
+ * <h1><a href="https://leetcode.com/problems/car-fleet/">LeetCode #853: Car Fleet</a></h1>
  * <p><b>Difficulty:</b> Medium &nbsp;|&nbsp; <b>Category:</b> Stack</p>
- * <p><b>NeetCode:</b> <a href="https://neetcode.io/problems/car-fleet">https://neetcode.io/problems/car-fleet</a></p>
  *
- * <h3>Problem</h3>
+ * <h2>Problem</h2>
  * <p>There are <code>n</code> cars at given miles away from the starting mile 0, traveling to reach the mile <code>target</code>.</p>
  * <p>You are given two integer arrays <code>position</code> and <code>speed</code>, both of length <code>n</code>, where <code>position[i]</code> is the starting mile of the <code>i<sup>th</sup></code> car and <code>speed[i]</code> is the speed of the <code>i<sup>th</sup></code> car in miles per hour.</p>
  * <p>A car cannot pass another car, but it can catch up and then travel next to it at the speed of the slower car.</p>
  * <p>A <strong>car fleet</strong> is a single car or a group of cars driving next to each other. The speed of the car fleet is the <strong>minimum</strong> speed of any car in the fleet.</p>
  * <p>If a car catches up to a car fleet at the mile <code>target</code>, it will still be considered as part of the car fleet.</p>
  * <p>Return the number of car fleets that will arrive at the destination.</p>
- * <p> </p>
- * <p><strong class="example">Example 1:</strong></p>
+ * <h3>Example 1:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">target = 12, position = [10,8,0,5,3], speed = [2,4,1,1,3]</span></p>
  * <p><strong>Output:</strong> <span class="example-io">3</span></p>
@@ -24,13 +22,13 @@ package Q_0853_Car_Fleet;
  * <li>The cars starting at 5 (speed 1) and 3 (speed 3) become a fleet, meeting each other at 6. The fleet moves at speed 1 until it reaches <code>target</code>.</li>
  * </ul>
  *
- * <p><strong class="example">Example 2:</strong></p>
+ * <h3>Example 2:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">target = 10, position = [3], speed = [3]</span></p>
  * <p><strong>Output:</strong> <span class="example-io">1</span></p>
  * <p><strong>Explanation:</strong></p>
  * There is only one car, hence there is only one fleet.
- * <p><strong class="example">Example 3:</strong></p>
+ * <h3>Example 3:</h3>
  *
  * <p><strong>Input:</strong> <span class="example-io">target = 100, position = [0,2,4], speed = [4,2,1]</span></p>
  * <p><strong>Output:</strong> <span class="example-io">1</span></p>
@@ -40,8 +38,7 @@ package Q_0853_Car_Fleet;
  * <li>Then, the fleet at 4 (speed 2) and the car at position 5 (speed 1) become one fleet, meeting each other at 6. The fleet moves at speed 1 until it reaches <code>target</code>.</li>
  * </ul>
  *
- * <p> </p>
- * <p><strong>Constraints:</strong></p>
+ * <h2>Constraints</h2>
  * <ul>
  * <li><code>n == position.length == speed.length</code></li>
  * <li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
