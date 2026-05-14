@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 /**
  * LeetCode: https://leetcode.com/problems/reorder-list/
- * NeetCode: https://neetcode.io/problems/reorder-list
  * LeetCode #143: Reorder List
  * You are given the head of a singly linked-list. The list can be represented as:
  * <p>

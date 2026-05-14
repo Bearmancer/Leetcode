@@ -2,7 +2,6 @@ package Q_0063_Unique_Paths_II;
 
 /**
  * LeetCode: https://leetcode.com/problems/unique-paths-ii/
- * NeetCode: https://neetcode.io/problems/unique-paths-ii
  * LeetCode #63: Unique Paths II
  *
  * You are given an {@code m x n} integer array {@code grid}. There is a robot initially located at the top-left corner (i.e., {@code grid[0][0]}). The robot tries to move to the bottom-right corner (i.e., {@code grid[m - 1][n - 1]}). The robot can only move either down or right at any point in time.

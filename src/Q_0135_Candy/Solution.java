@@ -2,7 +2,6 @@ package Q_0135_Candy;
 
 /**
  * LeetCode: https://leetcode.com/problems/candy/
- * NeetCode: https://neetcode.io/problems/candy
  * LeetCode #135: Candy
  *
  * There are {@code n} children standing in a line. Each child is assigned a rating value given in the integer array {@code ratings}.

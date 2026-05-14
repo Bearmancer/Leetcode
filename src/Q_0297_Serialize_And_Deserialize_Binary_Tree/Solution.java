@@ -2,7 +2,6 @@ package Q_0297_Serialize_And_Deserialize_Binary_Tree;
 
 /**
  * LeetCode: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
- * NeetCode: https://neetcode.io/problems/serialize-and-deserialize-binary-tree
  * LeetCode #297: Serialize and Deserialize Binary Tree
  * Definition for a binary tree node.
  * public class TreeNode {

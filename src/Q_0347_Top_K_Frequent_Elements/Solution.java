@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * LeetCode: https://leetcode.com/problems/top-k-frequent-elements/
- * NeetCode: https://neetcode.io/problems/top-k-frequent-elements
  * LeetCode #347: Top K Frequent Elements
  * <p>
  * Given an integer array {@code nums} and an integer {@code k}, return the

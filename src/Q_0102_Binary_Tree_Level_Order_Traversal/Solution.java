@@ -1,10 +1,10 @@
 package Q_0102_Binary_Tree_Level_Order_Traversal;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * LeetCode: https://leetcode.com/problems/binary-tree-level-order-traversal/
- * NeetCode: https://neetcode.io/problems/binary-tree-level-order-traversal
  * LeetCode #102: Binary Tree Level Order Traversal
  * Definition for a binary tree node.
  * public class TreeNode {

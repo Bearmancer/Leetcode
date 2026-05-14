@@ -5,7 +5,6 @@ import java.util.HashSet;
 
 /**
  * LeetCode: https://leetcode.com/problems/linked-list-cycle/
- * NeetCode: https://neetcode.io/problems/linked-list-cycle
  * LeetCode #141: Linked List Cycle
  *
  * Given {@code head}, the head of a linked list, determine if the linked list has a cycle in it.

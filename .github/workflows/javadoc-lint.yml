@@ -1,0 +1,83 @@
+name: Javadoc Standards Check
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  validate-javadocs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Compile Java sources
+        run: |
+          # Find all Java files and compile them to check for syntax errors
+          find src/ -name "*.java" > sources.txt
+          if [ -s sources.txt ]; then
+            javac -d /tmp/classes @sources.txt
+            echo "Compilation successful ✓"
+          else
+            echo "No Java files found in src/"
+          fi
+        shell: bash
+
+      - name: Validate Javadoc Formatting
+        run: |
+          python3 -c "
+import os, re, sys
+
+errors = []
+
+for root, dirs, files in os.walk('src'):
+    for f in files:
+        if not f.endswith('.java'):
+            continue
+
+        path = os.path.join(root, f)
+        with open(path, encoding='utf-8') as fh:
+            content = fh.read()
+
+        # Check for class-level Javadoc — Javadoc must appear before 'class' declaration
+        if not re.search(r'/\*\*.*?\*/\s*(public\s+)?(abstract\s+)?(final\s+)?class\s+\w+', content, re.DOTALL):
+            errors.append(f'{path}: Missing class-level Javadoc')
+            continue
+
+        # Extract the first Javadoc block that precedes a class declaration
+        javadoc_match = re.search(r'/\*\*(.*?)\*/\s*(public\s+)?(abstract\s+)?(final\s+)?class\s+\w+', content, re.DOTALL)
+        if not javadoc_match:
+            errors.append(f'{path}: Unable to extract Javadoc block')
+            continue
+
+        javadoc = javadoc_match.group(1)
+
+        # Define required elements and their corresponding error messages
+        checks = {
+            '<h1>': 'Missing <h1> title in Javadoc',
+            '<h2>Problem</h2>': 'Missing <h2>Problem</h2> section in Javadoc',
+            '<h2>Examples</h2>': 'Missing <h2>Examples</h2> section in Javadoc',
+            '<h2>Constraints</h2>': 'Missing <h2>Constraints</h2> section in Javadoc',
+            'leetcode.com/problems/': 'Missing LeetCode problem link in Javadoc',
+            'neetcode.io/problems/': 'Missing NeetCode problem link in Javadoc',
+        }
+
+        for pattern, msg in checks.items():
+            if pattern not in javadoc:
+                errors.append(f'{path}: {msg}')
+
+if errors:
+    print('Javadoc validation FAILED:')
+    for e in errors:
+        print(f'  FAIL: {e}')
+    sys.exit(1)
+else:
+    print('All Javadocs pass validation ✓')
+"
+        shell: bash

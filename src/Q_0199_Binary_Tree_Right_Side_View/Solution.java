@@ -1,10 +1,10 @@
 package Q_0199_Binary_Tree_Right_Side_View;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * LeetCode: https://leetcode.com/problems/binary-tree-right-side-view/
- * NeetCode: https://neetcode.io/problems/binary-tree-right-side-view
  * LeetCode #199: Binary Tree Right Side View
  * Definition for a binary tree node.
  * public class TreeNode {

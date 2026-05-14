@@ -2,7 +2,6 @@ package Q_0221_Maximal_Square;
 
 /**
  * LeetCode: https://leetcode.com/problems/maximal-square/
- * NeetCode: https://neetcode.io/problems/maximal-square
  * LeetCode #221: Maximal Square
  *
  * Given an {@code m x n} binary {@code matrix} filled with {@code 0}'s and {@code 1}'s, find the largest square containing only {@code 1}'s and return its area.
